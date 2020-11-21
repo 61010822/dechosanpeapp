@@ -37,3 +37,12 @@ flutter:
     - family: WorkSansMedium
       fonts:
         - asset: assets/fonts/Work_Sans/WorkSans-Medium.ttf
+
+    - family: Intrepid
+      fonts:
+        - asset: assets/fonts/Louis/Intrepid.ttf
+
+    - family: Dior
+      fonts:
+        - asset: assets/fonts/Dior/OPTINaval.otf
+

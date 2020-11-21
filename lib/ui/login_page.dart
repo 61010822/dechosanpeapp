@@ -150,7 +150,7 @@ class _LoginPageState extends State<LoginPage>
         value,
         textAlign: TextAlign.center,
         style: TextStyle(
-            color: Color(0xFFffd9de), fontSize: 16.0, fontFamily: "Intrepid"),
+            color: Color(0xFFffd9de), fontSize: 16.0, fontFamily: 'Intrepid'),
       ),
       backgroundColor: Color(0xFF181717), // โชว bg ด้านล่างสุดของแอพ
 
@@ -179,7 +179,7 @@ class _LoginPageState extends State<LoginPage>
                 child: Text(
                   "LOGIN", //text login
                   style: TextStyle(
-                      color: left, fontSize: 16.0, fontFamily: "Intrepid"),
+                      color: left, fontSize: 16.0, fontFamily: 'Dior'),
                 ),
               ),
             ),
@@ -333,9 +333,13 @@ class _LoginPageState extends State<LoginPage>
                             fontFamily: "Intrepid"),
                       ),
                     ),
-                    onPressed: () => showInSnackBar("Login button pressed")),
-              ),
-            ],
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/home-page');
+                      showInSnackBar("Login button pressed");
+                    }
+                ),
+                ),
+                ],
           ),
           Padding(
             padding: EdgeInsets.only(top: 10.0),
